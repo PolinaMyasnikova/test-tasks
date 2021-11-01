@@ -1,0 +1,7 @@
+{% for v in vill %}
+			{% if vil_selected == v.pk %}
+			<li class="selected">{{v.village}}</li>
+			{% else %}
+			<li><a href="{{ v.get_absolute_url }}">{{v.village}}</a></li>
+			{% endif %}
+		{% endfor %}
